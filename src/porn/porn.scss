@@ -1,0 +1,42 @@
+@import "components/reset";
+@import "components/buttons";
+@import "components/text";
+@import "components/title";
+@import "components/flex";
+@import "components/margin";
+@import "components/media";
+@import "components/hover";
+@import "components/form";
+@import "components/animate";
+@import "components/variable";
+@import "components/nav";
+@import "components/offset";
+@import "components/slider";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $cl-heading;
+}
+
+.container {
+  margin: 0 auto;
+  @include response {
+    width: 98%;
+  }
+  @include response-sm {
+    width: 98%;
+  }
+  max-width: 1130px;
+}
+
+.box {
+  padding: 14px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px -1px;
+  margin: 10px;
+}
+
+@import "components/grid";

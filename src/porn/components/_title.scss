@@ -1,0 +1,22 @@
+$line-mg: 10px;
+
+.line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  &::after,
+  &::before {
+    content: "";
+    height: 3px;
+    display: block;
+    flex: 1;
+    background: #333;
+  }
+
+  &::after {
+    margin-left: $line-mg;
+  }
+  &::before {
+    margin-right: $line-mg;
+  }
+}

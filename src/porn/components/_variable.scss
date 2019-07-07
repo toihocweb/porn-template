@@ -1,0 +1,34 @@
+// $color-primary: #2e8ece;
+// $color-warning: #e67e22;
+$btn-padding-top: 6px;
+$btn-padding-left: 15px;
+
+$colors: (
+  primary: #2196f3,
+  warning: #ff5722,
+  danger: #d62c1a,
+  success: #4caf50,
+  teal: #009688,
+  dark: #34495e,
+  pumpkin: #e91e63,
+  cloud: #795548
+);
+$colors_hover: (
+  primary: #1565c0,
+  warning: #ef6c00,
+  danger: #c62828,
+  success: #2e7d32,
+  teal: #00695c,
+  dark: #263545,
+  pumpkin: #ad1457,
+  cloud: #604439
+);
+// grid
+$gutter: 10px;
+
+// form
+$main-color: #03a9f4;
+
+//text color
+$cl-text: #5f6368;
+$cl-heading: #202124;

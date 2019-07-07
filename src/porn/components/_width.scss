@@ -1,0 +1,9 @@
+@for $i from 30 through 900 {
+  $i: $i + 30;
+  @if $i % 30 == 0 {
+    .w-#{$i} {
+      max-width: 100%;
+      width: #{$i}px;
+    }
+  }
+}

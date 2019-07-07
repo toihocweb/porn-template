@@ -1,0 +1,26 @@
+@import "_variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $cl-text;
+  line-height: 120%;
+  &:after,
+  &:before {
+    margin: 0;
+    padding: 0;
+  }
+}
+input,
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+@import "_media";
+
+@include response {
+  @for $i from 0 through 11 {
+    .offset-#{$i} {
+      margin-left: 100%/12 * $i;
+    }
+  }
+}
+
+@include response-sm {
+  @for $i from 0 through 11 {
+    .offset-sm-#{$i} {
+      margin-left: 100%/12 * $i;
+    }
+  }
+}
+
+@include response-md {
+  @for $i from 0 through 11 {
+    .offset-md-#{$i} {
+      margin-left: 100%/12 * $i;
+    }
+  }
+}
+
+@include response-lg {
+  @for $i from 0 through 11 {
+    .offset-lg-#{$i} {
+      margin-left: 100%/12 * $i;
+    }
+  }
+}
