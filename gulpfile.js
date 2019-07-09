@@ -16,8 +16,32 @@ var gulp = require("gulp"),
 var imagemin = require("gulp-imagemin");
 
 gulp.task("scss", function() {
-  gulp
-    .src(["src/scss/**/*.scss", "src/porn/**/*.scss"])
+  return gulp
+    .src(["src/scss/**/*.scss"])
+    .pipe(
+      plumber({
+        handleError: function(err) {
+          console.log(err);
+          this.emit("end");
+        }
+      })
+    )
+    .pipe(sass())
+    .pipe(autoPrefixer())
+    .pipe(cssComb())
+    .pipe(cmq({ log: true }))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(
+      rename({
+        suffix: ".min"
+      })
+    )
+    .pipe(cleanCss())
+    .pipe(gulp.dest("dist/css"));
+});
+gulp.task("porn", function() {
+  return gulp
+    .src(["src/porn/**/*.scss"])
     .pipe(
       plumber({
         handleError: function(err) {
@@ -48,7 +72,7 @@ gulp.task("image", function() {
 });
 
 gulp.task("js", function() {
-  gulp
+  return gulp
     .src(["src/js/**/*.js"])
     .pipe(
       plumber({
@@ -90,7 +114,7 @@ gulp.task("serve", function() {
 
   gulp.watch("src/js/**/*.js", gulp.series("js")).on("change", reload);
   gulp.watch("src/scss/**/*.scss", gulp.series("scss")).on("change", reload);
-  gulp.watch("src/porn/**/*.scss", gulp.series("scss")).on("change", reload);
+  gulp.watch("src/porn/**/*.scss", gulp.series("porn")).on("change", reload);
   gulp.watch("src/img/*", gulp.series("image")).on("change", reload);
   gulp.watch("*.html", gulp.series("html")).on("change", reload);
 });
