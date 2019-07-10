@@ -7031,6 +7031,15 @@ body.pornnav-noscroll-x {
 	background: #869791;
 }
 
+.parallax {
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center 0;
+	background-size: cover;
+}
+
 h1,
 h2,
 h3,
@@ -7062,6 +7071,14 @@ h6 {
 
 .row div[class^='col-'] {
 	padding: 5px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+
+.parallax {
+	background-attachment: scroll;
+}
+
 }
 
 @media (min-width: 577px) {

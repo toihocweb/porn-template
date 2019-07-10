@@ -1,6 +1,3 @@
-$(document).ready(function () {
-    $(selector).click(function (e) { 
-        e.preventDefault();
-        
-    });
+$(document).ready(function() {
+  console.log("ok 123 123");
 });
