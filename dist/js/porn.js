@@ -5,6 +5,9 @@
 //   };
 // })(jQuery);
 
+
+
+
 var scrolled = $(window).scrollTop();
 $(".parallax").each(function(index) {
   var imageSrc = $(this).data("image-src");
@@ -649,11 +652,11 @@ $('[class~="btn-ripple"]').click(function(e) {
         closingDelay: 250,
         showArrows: !0,
         phoneBtn: "",
-        phoneLabel: "Call Us",
+        phoneLabel: "",
         locationBtn: "",
-        locationLabel: "Location",
+        locationLabel: "",
         closeBtn: !1,
-        closeLabel: "Close",
+        closeLabel: "",
         mobileMode: !1,
         scrollbarFix: !1
       },
@@ -823,7 +826,8 @@ $('[class~="btn-ripple"]').click(function(e) {
               .parent("li")
               .addClass("has-sub")
               .append(
-                '<a class="dd-toggle" href="#"><span class="icon-plus"></span></a>'
+                // <i class="fa fa-angle-down"></i>
+                '<a class="dd-toggle" href="#"><span class="fa fa-angle-down"></span></a>'
               );
         }),
         nav.find("li .dd-toggle").on("click", function(n) {
