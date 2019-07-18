@@ -1,0 +1,142 @@
+
+  
+  .breadcrumbs {
+    width: 350px;
+  }
+  
+  .breadcrumbs_1 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 20px;
+  
+  }
+  
+  .breadcrumbs_1 > ul > li {
+    position: relative;
+    float: left;
+    transform: skewX(-15deg);  
+    background-color: #fff;
+  box-shadow: -2px 0px 20px -6px rgba(0,0,0,0.5);
+  z-index: 1;
+    width: 70px;
+    margin-left: -50px;
+  transition: all 0.5s;
+  }
+  
+  .breadcrumbs_1 > ul > li  > a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+   transform: skewX(15deg);
+   text-decoration:none;
+   color: #444;
+  font-weight: 300;
+  }
+  .breadcrumbs_1 > ul > li:first-child {
+   margin-left: 0px;
+  }
+  .breadcrumbs_1 > ul > li:hover {
+   background-color: #CFD8DC;
+  }
+  
+  .breadcrumbs_1 > ul > li:last-child {
+    background-color: #78909C;
+  }
+  
+  .breadcrumbs_1 > ul > li:last-child > a {
+    color: #fff;;
+  }
+  
+  
+  .breadcrumbs_1 > ul:hover > li {
+    margin-left: 0px;
+  }
+   
+  
+  .breadcrumbs_2 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 20px 20px;
+  }
+  
+  .breadcrumbs_2 > ul > li {
+    position: relative;
+    float: left;
+    transform: skewX(-15deg);  
+    background-color: #fff;
+  box-shadow: -2px 0px 20px -6px rgba(0,0,0,0.5);
+  z-index: 1;
+  transition: all 0.5s;
+  }
+  
+  .breadcrumbs_2 > ul > li:hover {
+   background-color: #CFD8DC;
+  }
+  
+  .breadcrumbs_2 > ul > li  > a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+   transform: skewX(15deg);
+   text-decoration:none;
+   color: #444;
+  font-weight: 300;
+  }
+  .breadcrumbs_2 > ul > li:last-child {
+    background-color: #78909C;
+    transform: skew(0deg);
+  margin-left: -5px;
+  
+  }
+  
+  .breadcrumbs_2 > ul > li:last-child > a {
+    color: #fff;
+   transform: skewX(0deg);
+  }
+   
+  
+  
+  
+  
+  .breadcrumbs_3 {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 20px 20px;
+  }
+  
+  .breadcrumbs_3 > ul > li {
+    position: relative;
+    float: left;
+    transform: skewX(-15deg);  
+    background-color: #fff;
+  z-index: 1;
+  transition: all 0.5s;
+  margin-left: 5px;
+  }
+  
+  .breadcrumbs_3 > ul > li:hover {
+   background-color: #CFD8DC;
+  }
+  
+  .breadcrumbs_3 > ul > li  > a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+   transform: skewX(15deg);
+   text-decoration:none;
+   color: #444;
+  font-weight: 300;
+  }
+  .breadcrumbs_3 > ul > li:last-child {
+    background-color: #78909C;
+  }
+  
+  .breadcrumbs_3 > ul > li:last-child > a {
+    color: #fff; 
+  
+  }
+   
+  
