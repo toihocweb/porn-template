@@ -2766,7 +2766,7 @@ body.pornnav-noscroll-x {
 	width: 12px;
 	height: 0;
 	content: '';
-	border-bottom: solid 3px #777;
+	border-bottom: solid 3px #5f6368;
 }
 
 .pornnav .icon-close:before {
@@ -2786,7 +2786,7 @@ body.pornnav-noscroll-x {
 
 .pornnav.dark .icon-close:after,
 .pornnav.dark .icon-close:before {
-	border-color: #fff;
+	border-color: #5f6368;
 }
 
 .pornnav .call-btn-mobile,
@@ -3054,11 +3054,6 @@ body.pornnav-noscroll-x {
 	text-align: left;
 }
 
-.pornnav.mobile.left .close-menu.third span,
-.pornnav.mobile.right .close-menu.third span {
-	display: none;
-}
-
 .pornnav.desktop li.mega ul ul {
 	width: auto;
 	background: 0 0;
@@ -3105,6 +3100,10 @@ body.pornnav-noscroll-x {
 
 .pornnav.desktop > ul > li.mega > ul > li > a {
 	color: #ff0;
+}
+
+.a-top {
+	padding: 5px 0;
 }
 
 .owl-carousel,

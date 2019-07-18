@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .products {
   display: flex;
   .item {
@@ -38,3 +39,30 @@
     transform: translateY(0px);
   }
 }
+=======
+@import '../porn/components/media';
+
+
+header {
+    > .row {
+        .logo{
+
+           @include response-sm() {
+               order: 2;
+           }
+           @include response-md() {
+            order: 1;
+        }
+        }
+        .navbar{
+            
+            @include response-sm() {
+                order: 1;
+            }
+            @include response-md() {
+                order: 2;
+            }
+        }
+    }
+}
+>>>>>>> 9075563ba420cf2176df3bb420f5d8719d9925c7

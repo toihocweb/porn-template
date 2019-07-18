@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 .products{display:-webkit-box;display:flex}.products .item{width:300px;margin-left:20px;-webkit-animation:fadeUp 2s forwards;animation:fadeUp 2s forwards;opacity:0}.products .item:nth-child(1){-webkit-animation-delay:.5s;animation-delay:.5s}.products .item:nth-child(2){-webkit-animation-delay:1s;animation-delay:1s}.products .item:nth-child(3){-webkit-animation-delay:1.5s;animation-delay:1.5s}.products .item:nth-child(4){-webkit-animation-delay:2s;animation-delay:2s}.products .item img{width:100%}@-webkit-keyframes fadeUp{from{-webkit-transform:translateY(200px);transform:translateY(200px);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fadeUp{from{-webkit-transform:translateY(200px);transform:translateY(200px);opacity:0}to{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+=======
+@media (min-width:577px){header>.row .logo{order:2}header>.row .navbar{order:1}}@media (min-width:769px){header>.row .logo{order:1}header>.row .navbar{order:2}}
+>>>>>>> 9075563ba420cf2176df3bb420f5d8719d9925c7
