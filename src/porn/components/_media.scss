@@ -21,3 +21,8 @@
     @content;
   }
 }
+@mixin response-max($a) {
+  @media (max-width: $a) {
+    @content;
+  }
+}
