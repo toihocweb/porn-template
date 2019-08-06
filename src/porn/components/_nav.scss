@@ -1,27 +1,27 @@
-.pornnav,
-.pornnav li {
+.teemonav,
+.teemonav li {
   position: relative;
   line-height: normal;
 }
-.pornnav {
+.teemonav {
   z-index: 9900;
 }
-.pornnav a {
+.teemonav a {
   color: #777;
 }
-.pornnav ul {
+.teemonav ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-.pornnav li {
+.teemonav li {
   list-style: none;
   display: block;
   margin: 0;
   padding: 0;
   vertical-align: middle;
 }
-.pornnav li a {
+.teemonav li a {
   padding: 7px 15px;
   display: block;
   text-decoration: none;
@@ -34,11 +34,11 @@
   transition: all 0.3s ease-out;
 }
 
-.pornnav > ul > li {
+.teemonav > ul > li {
   display: inline-block;
 }
 
-.pornnav ul ul {
+.teemonav ul ul {
   top: auto;
   width: 220px;
   position: absolute;
@@ -47,63 +47,63 @@
   display: none;
   background: #ddd;
 }
-.pornnav.light,
-.pornnav.light ul ul {
+.teemonav.light,
+.teemonav.light ul ul {
   background: rgba(255, 255, 255, 1);
 }
-.pornnav li li {
+.teemonav li li {
   display: block;
 }
-.pornnav ul ul ul {
+.teemonav ul ul ul {
   top: 0;
   left: 220px;
 }
-.pornnav > ul > li:hover > ul > li:hover > ul {
+.teemonav > ul > li:hover > ul > li:hover > ul {
   opacity: 1;
   visibility: visible;
   top: 0;
 }
-.pornnav > ul > li.drop-left > ul {
+.teemonav > ul > li.drop-left > ul {
   right: 0;
 }
-.pornnav li.drop-left ul ul {
+.teemonav li.drop-left ul ul {
   left: auto;
   right: 220px;
 }
-.pornnav.dark,
-.pornnav.dark ul ul {
+.teemonav.dark,
+.teemonav.dark ul ul {
   background: rgba(0, 0, 0, 1);
 }
-.pornnav.dark a,
-.pornnav.dark li a {
+.teemonav.dark a,
+.teemonav.dark li a {
   color: #fff;
 }
-.pornnav.fixed {
+.teemonav.fixed {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 9999;
 }
-body.pornnav-noscroll-x {
+body.teemonav-noscroll-x {
   overflow-x: hidden;
 }
-.pornnav li.has-sub > a:after {
+.teemonav li.has-sub > a:after {
   content: "\f107";
   margin-left: 5px;
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   display: inline-block;
 }
-.pornnav .dd-toggle,
-.pornnav li.call-btn-mobile,
-.pornnav li.location-btn-mobile,
-.pornnav.hide-arrows li li.has-sub > a:after,
-.pornnav.hide-arrows li.drop-left li.has-sub > a:after,
-.pornnav.hide-arrows li.has-sub > a:after {
+.teemonav .dd-toggle,
+.teemonav li.call-btn-mobile,
+.teemonav li.location-btn-mobile,
+.teemonav.hide-arrows li li.has-sub > a:after,
+.teemonav.hide-arrows li.drop-left li.has-sub > a:after,
+.teemonav.hide-arrows li.has-sub > a:after {
   display: none;
 }
-.pornnav li li.has-sub > a:after {
+.teemonav li li.has-sub > a:after {
   margin-left: 10px;
   float: right;
   border-top: 6px solid transparent;
@@ -112,7 +112,7 @@ body.pornnav-noscroll-x {
   position: relative;
   top: -2px;
 }
-.pornnav li.drop-left li.has-sub > a:after {
+.teemonav li.drop-left li.has-sub > a:after {
   float: left;
   margin-right: 10px;
   border-left: 0;
@@ -120,15 +120,15 @@ body.pornnav-noscroll-x {
   border-bottom: 6px solid transparent;
   border-right: 6px solid #fff;
 }
-.pornnav .call-btn-mobile,
-.pornnav .close-menu,
-.pornnav .location-btn-mobile,
-.pornnav .menu-toggle {
+.teemonav .call-btn-mobile,
+.teemonav .close-menu,
+.teemonav .location-btn-mobile,
+.teemonav .menu-toggle {
   display: none;
   text-transform: uppercase;
   text-decoration: none;
 }
-.pornnav .dd-toggle {
+.teemonav .dd-toggle {
   position: absolute;
   top: 8px;
   right: 0;
@@ -140,20 +140,20 @@ body.pornnav-noscroll-x {
   border: 0;
 }
 
-.pornnav.desktop.hide-arrows li.has-sub a {
+.teemonav.desktop.hide-arrows li.has-sub a {
   padding-right: 15px;
 }
-.pornnav.mobile > ul > li > a.dd-toggle {
+.teemonav.mobile > ul > li > a.dd-toggle {
   padding: 0;
 }
-.pornnav svg {
+.teemonav svg {
   fill: currentColor;
   width: 1em;
   height: 1em;
   position: relative;
   top: 2px;
 }
-.pornnav a.dd-toggle .icon-plus {
+.teemonav a.dd-toggle .icon-plus {
   box-sizing: border-box;
   transition: transform 0.3s;
   width: 12px;
@@ -162,8 +162,8 @@ body.pornnav-noscroll-x {
   vertical-align: middle;
   display: inline-block;
 }
-.pornnav a.dd-toggle .icon-plus:after,
-.pornnav a.dd-toggle .icon-plus:before {
+.teemonav a.dd-toggle .icon-plus:after,
+.teemonav a.dd-toggle .icon-plus:before {
   content: "";
   display: block;
   height: 0;
@@ -172,33 +172,33 @@ body.pornnav-noscroll-x {
   position: absolute;
   width: 12px;
 }
-.pornnav a.dd-toggle .icon-plus:before {
+.teemonav a.dd-toggle .icon-plus:before {
   transform: rotate(90deg);
   transition: width 0.3s;
 }
-.pornnav li.open > a.dd-toggle .icon-plus {
+.teemonav li.open > a.dd-toggle .icon-plus {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-.pornnav.light a.dd-toggle .icon-plus:after,
-.pornnav.light a.dd-toggle .icon-plus:before {
+.teemonav.light a.dd-toggle .icon-plus:after,
+.teemonav.light a.dd-toggle .icon-plus:before {
   border-color: #000;
 }
-.pornnav.dark a.dd-toggle .icon-plus:after,
-.pornnav.dark a.dd-toggle .icon-plus:before {
+.teemonav.dark a.dd-toggle .icon-plus:after,
+.teemonav.dark a.dd-toggle .icon-plus:before {
   border-color: #fff;
 }
-.pornnav .icon-close {
+.teemonav .icon-close {
   box-sizing: border-box;
   width: 12px;
   height: 12px;
   position: relative;
   display: inline-block;
 }
-.pornnav .icon-close:after,
-.pornnav .icon-close:before {
+.teemonav .icon-close:after,
+.teemonav .icon-close:before {
   content: "";
   display: block;
   width: 12px;
@@ -207,33 +207,33 @@ body.pornnav-noscroll-x {
   border-bottom: solid 3px #5f6368;
   position: absolute;
 }
-.pornnav .icon-close:before {
+.teemonav .icon-close:before {
   transform: rotate(45deg);
 }
-.pornnav .icon-close:after {
+.teemonav .icon-close:after {
   transform: rotate(-45deg);
 }
-.pornnav.light .icon-close:after,
-.pornnav.light .icon-close:before {
+.teemonav.light .icon-close:after,
+.teemonav.light .icon-close:before {
   border-color: #000;
 }
-.pornnav.dark .icon-close:after,
-.pornnav.dark .icon-close:before {
+.teemonav.dark .icon-close:after,
+.teemonav.dark .icon-close:before {
   border-color: #5f6368;
 }
-.pornnav .call-btn-mobile,
-.pornnav .close-menu,
-.pornnav .location-btn-mobile,
-.pornnav .menu-toggle {
+.teemonav .call-btn-mobile,
+.teemonav .close-menu,
+.teemonav .location-btn-mobile,
+.teemonav .menu-toggle {
   /* padding: 15px; */
   box-sizing: border-box;
 }
-.pornnav .menu-toggle span.bars {
+.teemonav .menu-toggle span.bars {
   display: inline-block;
   position: relative;
   top: 3px;
 }
-.pornnav .menu-toggle span.bars span {
+.teemonav .menu-toggle span.bars span {
   display: block;
   width: 15px;
   height: 2px;
@@ -241,83 +241,83 @@ body.pornnav-noscroll-x {
   background: #777;
   margin: 0 0 3px;
 }
-.pornnav .full {
+.teemonav .full {
   width: 100%;
 }
-.pornnav .half {
+.teemonav .half {
   width: 50%;
 }
-.pornnav .third {
+.teemonav .third {
   width: 33%;
   text-align: center;
 }
-.pornnav .location-btn-mobile.third {
+.teemonav .location-btn-mobile.third {
   text-align: center;
 }
-.pornnav .location-btn-mobile.half {
+.teemonav .location-btn-mobile.half {
   text-align: right;
 }
-.pornnav.light .half,
-.pornnav.light .third {
+.teemonav.light .half,
+.teemonav.light .third {
   border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
-.pornnav.light.left .half,
-.pornnav.light.left .third,
-.pornnav.light.right .half,
-.pornnav.light.right .third {
+.teemonav.light.left .half,
+.teemonav.light.left .third,
+.teemonav.light.right .half,
+.teemonav.light.right .third {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-.pornnav.light .half:first-child,
-.pornnav.light .third:first-child {
+.teemonav.light .half:first-child,
+.teemonav.light .third:first-child {
   border-left: 0;
 }
-.pornnav.dark .half,
-.pornnav.dark .third {
+.teemonav.dark .half,
+.teemonav.dark .third {
   border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
-.pornnav.dark.left .half,
-.pornnav.dark.left .third,
-.pornnav.dark.right .half,
-.pornnav.dark.right .third {
+.teemonav.dark.left .half,
+.teemonav.dark.left .third,
+.teemonav.dark.right .half,
+.teemonav.dark.right .third {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-.pornnav.dark.left .menu-toggle,
-.pornnav.dark.right .menu-toggle,
-.pornnav.light.left .menu-toggle,
-.pornnav.light.right .menu-toggle {
+.teemonav.dark.left .menu-toggle,
+.teemonav.dark.right .menu-toggle,
+.teemonav.light.left .menu-toggle,
+.teemonav.light.right .menu-toggle {
   border-bottom: 0;
 }
-.pornnav.dark .half:first-child,
-.pornnav.dark .third:first-child {
+.teemonav.dark .half:first-child,
+.teemonav.dark .third:first-child {
   border-left: 0;
 }
-.pornnav.light .menu-toggle span.bars span {
+.teemonav.light .menu-toggle span.bars span {
   background: #5f6368;
 }
-.pornnav.dark .menu-toggle span.bars span {
+.teemonav.dark .menu-toggle span.bars span {
   background: #fff;
 }
-.pornnav.mobile,
-.pornnav.mobile.fixed {
+.teemonav.mobile,
+.teemonav.mobile.fixed {
   position: static;
 }
-.pornnav.mobile ul {
+.teemonav.mobile ul {
   position: relative;
   display: none;
   text-align: left;
   background: rgba(221, 221, 221, 1);
 }
-.pornnav.mobile.active > ul,
-.pornnav.mobile > ul > li {
+.teemonav.mobile.active > ul,
+.teemonav.mobile > ul > li {
   display: block;
 }
-.pornnav.mobile.active {
+.teemonav.mobile.active {
   padding-bottom: 0;
 }
-.pornnav.mobile > ul > li > a {
+.teemonav.mobile > ul > li > a {
   padding: 7px 15px;
 }
-.pornnav.mobile ul ul {
+.teemonav.mobile ul ul {
   position: relative;
   opacity: 1;
   visibility: visible;
@@ -328,81 +328,81 @@ body.pornnav-noscroll-x {
   -o-transition: color 0 ease-in;
   transition: none;
 }
-.pornnav.mobile ul ul ul {
+.teemonav.mobile ul ul ul {
   left: auto;
   top: auto;
 }
-.pornnav.mobile li.drop-left ul ul {
+.teemonav.mobile li.drop-left ul ul {
   right: auto;
 }
-.pornnav.mobile li a {
+.teemonav.mobile li a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-.pornnav.mobile > ul {
+.teemonav.mobile > ul {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
-.pornnav.mobile.light li a {
+.teemonav.mobile.light li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-.pornnav.mobile.light > ul {
+.teemonav.mobile.light > ul {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
-.pornnav.mobile li a.dd-toggle,
-.pornnav.mobile.light li a.dd-toggle {
+.teemonav.mobile li a.dd-toggle,
+.teemonav.mobile.light li a.dd-toggle {
   border: 0;
 }
-.pornnav.mobile .call-btn-mobile,
-.pornnav.mobile .close-menu,
-.pornnav.mobile .dd-toggle,
-.pornnav.mobile .location-btn-mobile,
-.pornnav.mobile .menu-toggle {
+.teemonav.mobile .call-btn-mobile,
+.teemonav.mobile .close-menu,
+.teemonav.mobile .dd-toggle,
+.teemonav.mobile .location-btn-mobile,
+.teemonav.mobile .menu-toggle {
   display: inline-block;
 }
-.pornnav.mobile li.call-btn-mobile {
+.teemonav.mobile li.call-btn-mobile {
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
 }
-.pornnav.mobile li.call-btn-mobile,
-.pornnav.mobile li.location-btn-mobile {
+.teemonav.mobile li.call-btn-mobile,
+.teemonav.mobile li.location-btn-mobile {
   display: inline-block;
   width: 50%;
   text-transform: uppercase;
   text-align: center;
 }
-.pornnav.mobile li.call-btn-mobile.full,
-.pornnav.mobile li.location-btn-mobile.full {
+.teemonav.mobile li.call-btn-mobile.full,
+.teemonav.mobile li.location-btn-mobile.full {
   display: block;
   width: 100%;
   text-transform: uppercase;
   border-right: 0;
   text-align: left;
 }
-.pornnav.mobile.light ul {
+.teemonav.mobile.light ul {
   background: rgba(255, 255, 255, 0.5);
 }
-.pornnav.mobile.dark ul {
+.teemonav.mobile.dark ul {
   background: rgba(0, 0, 0, 1);
 }
-.pornnav.mobile.dark ul ul {
+.teemonav.mobile.dark ul ul {
   background: rgba(255, 255, 255, 0.08);
 }
-.pornnav.mobile.light li.call-btn-mobile {
+.teemonav.mobile.light li.call-btn-mobile {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-.pornnav.mobile.top {
+.teemonav.mobile.top {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 9999;
 }
-.pornnav.mobile li li.has-sub > a:after,
-.pornnav.mobile li.drop-left li.has-sub > a:after,
-.pornnav.mobile li.has-sub > a:after {
+.teemonav.mobile li li.has-sub > a:after,
+.teemonav.mobile li.drop-left li.has-sub > a:after,
+.teemonav.mobile li.has-sub > a:after {
   display: none;
 }
-.pornnav.mobile.left > ul,
-.pornnav.mobile.right > ul {
+.teemonav.mobile.left > ul,
+.teemonav.mobile.right > ul {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -412,96 +412,96 @@ body.pornnav-noscroll-x {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-.pornnav.mobile.right > ul {
+.teemonav.mobile.right > ul {
   right: 0;
 }
-.pornnav.mobile.left .close-menu,
-.pornnav.mobile.right .close-menu {
+.teemonav.mobile.left .close-menu,
+.teemonav.mobile.right .close-menu {
   display: inline-block;
   text-align: right;
 }
-.pornnav.mobile.left > ul {
+.teemonav.mobile.left > ul {
   left: 0;
 }
-.pornnav.mobile.left .call-btn-mobile.half,
-.pornnav.mobile.left .call-btn-mobile.third,
-.pornnav.mobile.left .close-menu.half,
-.pornnav.mobile.left .close-menu.third,
-.pornnav.mobile.left .location-btn-mobile.half,
-.pornnav.mobile.left .location-btn-mobile.third,
-.pornnav.mobile.right .call-btn-mobile.half,
-.pornnav.mobile.right .call-btn-mobile.third,
-.pornnav.mobile.right .close-menu.half,
-.pornnav.mobile.right .close-menu.third,
-.pornnav.mobile.right .location-btn-mobile.half,
-.pornnav.mobile.right .location-btn-mobile.third {
+.teemonav.mobile.left .call-btn-mobile.half,
+.teemonav.mobile.left .call-btn-mobile.third,
+.teemonav.mobile.left .close-menu.half,
+.teemonav.mobile.left .close-menu.third,
+.teemonav.mobile.left .location-btn-mobile.half,
+.teemonav.mobile.left .location-btn-mobile.third,
+.teemonav.mobile.right .call-btn-mobile.half,
+.teemonav.mobile.right .call-btn-mobile.third,
+.teemonav.mobile.right .close-menu.half,
+.teemonav.mobile.right .close-menu.third,
+.teemonav.mobile.right .location-btn-mobile.half,
+.teemonav.mobile.right .location-btn-mobile.third {
   text-align: center;
 }
-.pornnav.mobile.left .menu-toggle.half,
-.pornnav.mobile.left .menu-toggle.third,
-.pornnav.mobile.right .menu-toggle.half,
-.pornnav.mobile.right .menu-toggle.third {
+.teemonav.mobile.left .menu-toggle.half,
+.teemonav.mobile.left .menu-toggle.third,
+.teemonav.mobile.right .menu-toggle.half,
+.teemonav.mobile.right .menu-toggle.third {
   text-align: left;
 }
-.pornnav.mobile.left .close-menu.third span,
-.pornnav.mobile.right .close-menu.third span {
+.teemonav.mobile.left .close-menu.third span,
+.teemonav.mobile.right .close-menu.third span {
   // display: none;
 }
-.pornnav.desktop li.mega ul ul {
+.teemonav.desktop li.mega ul ul {
   background: 0 0;
   width: auto;
 }
-.pornnav.desktop li.mega li {
+.teemonav.desktop li.mega li {
   display: inline-block;
   vertical-align: top;
   margin-left: -4px;
 }
-.pornnav.desktop li.mega li li {
+.teemonav.desktop li.mega li li {
   display: block;
   position: relative;
   left: 4px;
 }
-.pornnav.desktop > ul > li.mega {
+.teemonav.desktop > ul > li.mega {
   position: inherit;
 }
-.pornnav.desktop > ul > li.mega > ul {
+.teemonav.desktop > ul > li.mega > ul {
   width: 100%;
 }
-.pornnav.desktop > ul > li.mega > ul li.has-sub ul {
+.teemonav.desktop > ul > li.mega > ul li.has-sub ul {
   display: block;
   position: relative;
   left: auto;
 }
-.pornnav.desktop > ul > li.mega > ul > li {
+.teemonav.desktop > ul > li.mega > ul > li {
   padding-bottom: 15px;
   box-sizing: border-box;
 }
-.pornnav.desktop li.mega li li a {
+.teemonav.desktop li.mega li li a {
   padding: 5px 15px;
 }
-.pornnav.desktop li.mega li.has-sub a:after {
+.teemonav.desktop li.mega li.has-sub a:after {
   display: none;
 }
-.pornnav.desktop > ul > li.mega > ul > li > a {
+.teemonav.desktop > ul > li.mega > ul > li > a {
   color: #ff0;
 }
 @media only screen and (max-width: 768px) {
-  .pornnav {
+  .teemonav {
     overflow: hidden;
     display: block;
   }
-  .pornnav ul {
+  .teemonav ul {
     position: relative;
     display: none;
   }
 }
 @media only screen and (max-width: 420px) {
-  .pornnav.mobile .call-btn-mobile.third span,
-  .pornnav.mobile .location-btn-mobile.third span {
+  .teemonav.mobile .call-btn-mobile.third span,
+  .teemonav.mobile .location-btn-mobile.third span {
     display: none;
   }
 }
 
-.a-top{
+.a-top {
   padding: 5px 0px;
 }

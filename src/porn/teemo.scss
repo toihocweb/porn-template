@@ -3,7 +3,6 @@
 @import "components/text";
 @import "components/title";
 @import "components/flex";
-@import "components/margin";
 @import "components/media";
 // @import "components/hover";
 
@@ -24,12 +23,12 @@ h6 {
   color: $cl-heading;
 }
 
-@font-face{
+@font-face {
   font-family: Proxi;
   src: url(../webfonts/proxima-nova-soft-regular-webfont.woff);
 }
-*{
-font-family: 'Proxi', Courier, monospace;
+* {
+  // font-family: 'Proxi', Courier, monospace;
 }
 .container {
   margin: 0 auto;

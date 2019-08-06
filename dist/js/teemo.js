@@ -105,10 +105,10 @@ $(window).scroll(function() {
   };
 })(jQuery);
 
-// pornScroll
+// teemoScroll
 (function($, nib) {
-  $.fn.pornScroll = function(options) {
-    var set = $.extend({}, $.fn.pornScroll.default, options),
+  $.fn.teemoScroll = function(options) {
+    var set = $.extend({}, $.fn.teemoScroll.default, options),
       gate = $(nib),
       vessel = this,
       object = $(set.target),
@@ -132,7 +132,7 @@ $(window).scroll(function() {
       use = $.extend({}, use);
 
       $(this)
-        .data("pornScroll", use)
+        .data("teemoScroll", use)
         .on("wheel.excite", function(act, info) {
           if (!use.keen && !act.mien) return;
 
@@ -341,13 +341,13 @@ $(window).scroll(function() {
     if (sample)
       return peak.indexOf(sample) > -1 || peak.indexOf(sample.tagName) > -1;
     $.each(peak, function(spot, detail) {
-      facet = $(detail).data("pornScroll");
+      facet = $(detail).data("teemoScroll");
       if (facet) return false;
     });
     return facet;
   };
 
-  $.fn.pornScroll.default = {
+  $.fn.teemoScroll.default = {
     target: "",
     range: 135,
     leap: 1.35,
@@ -365,7 +365,7 @@ $(window).scroll(function() {
   $.fn.demit = function() {
     return this.each(function() {
       if ($.zenith(this)) var habit = $.zenith();
-      else habit = $(this).data("pornScroll");
+      else habit = $(this).data("teemoScroll");
       if (habit) {
         if (habit.novel) cancelAnimationFrame(habit.motion);
         else habit.target.stop();
@@ -377,7 +377,7 @@ $(window).scroll(function() {
   $.fn.amend = function(gist) {
     return this.each(function() {
       if ($.zenith(this)) var quirk = $.zenith();
-      else quirk = $(this).data("pornScroll");
+      else quirk = $(this).data("teemoScroll");
       if (quirk) {
         $.each(gist, function(sign, rate) {
           if (sign in quirk) quirk[sign] = rate;
@@ -637,9 +637,9 @@ $('[class~="btn-ripple"]').click(function(e) {
     .addClass("rippleEffect");
 });
 
-// add pornnav
+// add teemonav
 !(function(u) {
-  u.fn.pornNav = function(n, r, h) {
+  u.fn.teemoNav = function(n, r, h) {
     (nav = u(this)), (r = u(window).width());
     var f = u.extend(
       {
@@ -761,7 +761,7 @@ $('[class~="btn-ripple"]').click(function(e) {
                 closeLabel +
                 "</a></li>"
             ),
-        f.scrollbarFix && u("body").addClass("pornnav-noscroll-x");
+        f.scrollbarFix && u("body").addClass("teemonav-noscroll-x");
       var a = document.getElementById("icon-phone");
       if (a) {
         a.setAttribute("viewBox", "0 0 480 480");
@@ -782,7 +782,7 @@ $('[class~="btn-ripple"]').click(function(e) {
         ),
           o.appendChild(d);
       }
-      u(".menu-toggle, .pornnav-open").on("click", function(n) {
+      u(".menu-toggle, .teemonav-open").on("click", function(n) {
         n.preventDefault(),
           "left" == f.position || "right" == f.position
             ? (nav
@@ -807,7 +807,7 @@ $('[class~="btn-ripple"]').click(function(e) {
                 .slideToggle(f.openingSpeed),
               nav.toggleClass("active"));
       }),
-        u(".close-menu, .pornnav-close").on("click", function() {
+        u(".close-menu, .teemonav-close").on("click", function() {
           nav.removeClass("active"),
             "left" == f.position || "right" == f.position
               ? nav
