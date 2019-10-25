@@ -5,9 +5,6 @@
 //   };
 // })(jQuery);
 
-
-
-
 var scrolled = $(window).scrollTop();
 $(".parallax").each(function(index) {
   var imageSrc = $(this).data("image-src");
@@ -647,7 +644,7 @@ $('[class~="btn-ripple"]').click(function(e) {
         breakpoint: 768,
         menuLabel: "Menu",
         sticky: !1,
-        position: "static",
+        position: "right",
         openingSpeed: 20,
         closingDelay: 250,
         showArrows: !0,

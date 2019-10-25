@@ -5,7 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -75,6 +81,7 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+  outline: none;
 }
 button,
 input {

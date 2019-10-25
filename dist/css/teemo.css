@@ -5,6 +5,15 @@
 	color: #5f6368;
 }
 
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -90,6 +99,7 @@ textarea {
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
+	outline: none;
 }
 
 button,
@@ -1919,7 +1929,7 @@ form input[type='radio']:checked::after {
 	z-index: 9900;
 	top: auto;
 	display: none;
-	width: 220px;
+	width: 150px;
 	text-align: left;
 	background: #ddd;
 }
@@ -1951,16 +1961,6 @@ form input[type='radio']:checked::after {
 .teemonav li.drop-left ul ul {
 	right: 220px;
 	left: auto;
-}
-
-.teemonav.dark,
-.teemonav.dark ul ul {
-	background: black;
-}
-
-.teemonav.dark a,
-.teemonav.dark li a {
-	color: #fff;
 }
 
 .teemonav.fixed {
@@ -2222,7 +2222,7 @@ body.teemonav-noscroll-x {
 }
 
 .teemonav.dark .menu-toggle span.bars span {
-	background: #fff;
+	background: #777;
 }
 
 .teemonav.mobile,
@@ -2741,6 +2741,10 @@ h6 {
 @font-face {
 	font-family: Proxi;
 	src: url(../webfonts/proxima-nova-soft-regular-webfont.woff);
+}
+
+* {
+	font-family: 'Proxi', Courier, monospace;
 }
 
 .container {

@@ -1,0 +1,17 @@
+.logo {
+	width: 100px;
+}
+
+.logo img {
+	max-width: 100%;
+}
+
+.header-bg {
+	height: 100vh;
+	background: url(../../dist/img/bg.svg) no-repeat top center/cover;
+}
+
+.header-bg header {
+	background: white;
+}
+
