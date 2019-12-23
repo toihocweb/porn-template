@@ -17,4 +17,13 @@ $(document).ready(function() {
     mobileMode: !1,
     scrollbarFix: !1
   });
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    autoplay: true,
+    loop: true,
+    // nav: false,
+    dots: false,
+    touchDrag: false
+    // mouseDrag: false
+  });
 });

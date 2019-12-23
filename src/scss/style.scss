@@ -1,14 +1,9 @@
-.logo {
-  width: 100px;
-  img {
-    max-width: 100%;
-  }
-}
-
-.header-bg {
-  background: url(../../dist/img/bg.svg) no-repeat top center/cover;
+aside {
   height: 100vh;
-  header {
-    background: white;
+  background: white;
+  width: 350px;
+  padding: 50px;
+  .logo {
+    margin-bottom: 40px;
   }
 }

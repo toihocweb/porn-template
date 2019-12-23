@@ -1,17 +1,11 @@
-.logo {
-	width: 100px;
-}
-
-.logo img {
-	max-width: 100%;
-}
-
-.header-bg {
+aside {
+	width: 350px;
 	height: 100vh;
-	background: url(../../dist/img/bg.svg) no-repeat top center/cover;
+	padding: 50px;
+	background: white;
 }
 
-.header-bg header {
-	background: white;
+aside .logo {
+	margin-bottom: 40px;
 }
 
