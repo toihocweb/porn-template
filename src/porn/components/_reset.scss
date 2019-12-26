@@ -1,9 +1,12 @@
 @import "_variable";
 * {
-  color: $cl-text;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html,body,a{
+  color: $cl-text;
+
 }
 a {
   text-decoration: none;

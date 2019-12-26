@@ -1,14 +1,44 @@
-.logo {
-  width: 100px;
-  img {
-    max-width: 100%;
+body,html {
+  font-size: 14px;
+}
+
+$main-color: #0776bc;
+header {
+  padding:14px;
+  .user-ttl{
+    a{
+      color: $main-color;
+      &:hover{
+        text-decoration: underline;
+      }
+  
+    }
+  }
+  nav {
+    ul {
+      li {
+        margin-left: 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+        a{
+          i {
+            margin-right: 4px;
+          }
+          &.register{
+            padding: 6px 10px;
+            border-radius: 20px;
+            border: 1px solid #333;
+          }
+        }
+      
+      }
+    }
   }
 }
 
-.header-bg {
-  background: url(../../dist/img/bg.svg) no-repeat top center/cover;
-  height: 100vh;
-  header {
-    background: white;
-  }
+
+.top-search{
+  background: $main-color url(https://chodocu.com/Content/img/bg-head-search.png) no-repeat center/contain;
+  padding: 20px;
 }
