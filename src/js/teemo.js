@@ -606,8 +606,8 @@ $('[class~="btn-ripple"]').click(function(e) {
   // Setup
   var posX = $(this).offset().left,
     posY = $(this).offset().top,
-    buttonWidth = $(this).width(),
-    buttonHeight = $(this).height();
+    buttonWidth = $(this).width() + 50,
+    buttonHeight = $(this).height() + 10;
 
   // Add the element
   $(this).prepend("<span class='ripple'></span>");
@@ -3102,7 +3102,7 @@ $('[class~="btn-ripple"]').click(function(e) {
 
     this._core.$element.toggleClass("owl-hidden", !this._visible);
 
-    this._visible && (this._core.invalidate("width") && this._core.refresh());
+    this._visible && this._core.invalidate("width") && this._core.refresh();
   };
 
   /**

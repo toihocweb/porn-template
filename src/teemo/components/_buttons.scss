@@ -7,6 +7,12 @@ img {
 .btn {
   padding: $btn-padding-top $btn-padding-left;
   border-radius: 3px;
+  box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.11),
+    0 12px 90px 0 rgba(103, 151, 255, 0.11);
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
   // font-size: 0.8rem;
   cursor: pointer;
   display: inline-block;

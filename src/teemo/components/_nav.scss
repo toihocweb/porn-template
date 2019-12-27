@@ -87,6 +87,8 @@ body.teemonav-noscroll-x {
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   display: inline-block;
+  position: relative;
+  top: 1px;
 }
 .teemonav .dd-toggle,
 .teemonav li.call-btn-mobile,
@@ -139,8 +141,12 @@ body.teemonav-noscroll-x {
 .teemonav.mobile > ul > li > a.dd-toggle {
   padding: 0;
 }
+.teemonav.mobile a {
+  // padding: 0;
+  color: #ccc;
+}
 .teemonav svg {
-  fill: currentColor;
+  fill: #ccc;
   width: 1em;
   height: 1em;
   position: relative;
@@ -197,7 +203,7 @@ body.teemonav-noscroll-x {
   width: 12px;
   height: 0;
   top: 50%;
-  border-bottom: solid 3px #5f6368;
+  border-bottom: solid 3px #ccc;
   position: absolute;
 }
 .teemonav .icon-close:before {
@@ -212,7 +218,7 @@ body.teemonav-noscroll-x {
 }
 .teemonav.dark .icon-close:after,
 .teemonav.dark .icon-close:before {
-  border-color: #5f6368;
+  border-color: #ccc;
 }
 .teemonav .call-btn-mobile,
 .teemonav .close-menu,
@@ -285,7 +291,7 @@ body.teemonav-noscroll-x {
   border-left: 0;
 }
 .teemonav.light .menu-toggle span.bars span {
-  background: #5f6368;
+  background: #ccc;
 }
 .teemonav.dark .menu-toggle span.bars span {
   background: #777;

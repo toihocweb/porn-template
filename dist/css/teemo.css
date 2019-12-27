@@ -14,6 +14,13 @@ a {
 	text-decoration: none;
 }
 
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
 ul,
 ol {
 	list-style: none;
@@ -357,12 +364,18 @@ img {
 
 .btn {
 	display: inline-block;
-	padding: 6px 15px;
+	padding: .5rem .75rem;
 	cursor: pointer;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
 	text-transform: capitalize;
 	border-radius: 3px;
+	box-shadow: 0 8px 60px 0 rgba(103, 151, 255, .11), 0 12px 90px 0 rgba(103, 151, 255, .11);
+}
+
+.btn:disabled {
+	pointer-events: none;
+	opacity: .7;
 }
 
 .btn-primary {
@@ -1983,6 +1996,8 @@ body.teemonav-noscroll-x {
 .teemonav li.has-sub > a:after {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
+	position: relative;
+	top: 1px;
 	display: inline-block;
 	margin-left: 5px;
 	content: '\f107';
@@ -2045,12 +2060,16 @@ body.teemonav-noscroll-x {
 	padding: 0;
 }
 
+.teemonav.mobile a {
+	color: #ccc;
+}
+
 .teemonav svg {
 	position: relative;
 	top: 2px;
 	width: 1em;
 	height: 1em;
-	fill: currentColor;
+	fill: #ccc;
 }
 
 .teemonav a.dd-toggle .icon-plus {
@@ -2115,7 +2134,7 @@ body.teemonav-noscroll-x {
 	width: 12px;
 	height: 0;
 	content: '';
-	border-bottom: solid 3px #5f6368;
+	border-bottom: solid 3px #ccc;
 }
 
 .teemonav .icon-close:before {
@@ -2135,7 +2154,7 @@ body.teemonav-noscroll-x {
 
 .teemonav.dark .icon-close:after,
 .teemonav.dark .icon-close:before {
-	border-color: #5f6368;
+	border-color: #ccc;
 }
 
 .teemonav .call-btn-mobile,
@@ -2223,7 +2242,7 @@ body.teemonav-noscroll-x {
 }
 
 .teemonav.light .menu-toggle span.bars span {
-	background: #5f6368;
+	background: #ccc;
 }
 
 .teemonav.dark .menu-toggle span.bars span {
@@ -2734,12 +2753,57 @@ body.teemonav-noscroll-x {
 	background-size: cover;
 }
 
+.notify {
+	position: absolute;
+	z-index: 9999;
+	top: 5px;
+	right: 5px;
+	width: 300px;
+	border-radius: 3px;
+}
+
+.notify-header {
+	font-size: 18px;
+	padding: 10px;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.notify-header span {
+	font-size: 16px;
+	margin-right: 6px;
+	color: white;
+}
+
+.notify-body {
+	padding: 10px;
+	color: white;
+}
+
+div[data-notify='success'] {
+	background: #4caf50;
+}
+
+div[data-notify='success'] .notify-header {
+	background: #3d8b40;
+}
+
+div[data-notify='warning'] {
+	background: #d63232;
+}
+
+div[data-notify='warning'] .notify-header {
+	background: #9c1f1f;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+	margin: 0;
+	padding: 0;
 	color: #202124;
 }
 

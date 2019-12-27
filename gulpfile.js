@@ -39,9 +39,9 @@ gulp.task("scss", function() {
     .pipe(cleanCss())
     .pipe(gulp.dest("dist/css"));
 });
-gulp.task("porn", function() {
+gulp.task("teemo", function() {
   return gulp
-    .src(["src/porn/**/*.scss"])
+    .src(["src/teemo/**/*.scss"])
     .pipe(
       plumber({
         handleError: function(err) {
@@ -114,7 +114,7 @@ gulp.task("serve", function() {
 
   gulp.watch("src/js/**/*.js", gulp.series("js")).on("change", reload);
   gulp.watch("src/scss/**/*.scss", gulp.series("scss")).on("change", reload);
-  gulp.watch("src/porn/**/*.scss", gulp.series("porn")).on("change", reload);
+  gulp.watch("src/teemo/**/*.scss", gulp.series("teemo")).on("change", reload);
   gulp.watch("src/img/*", gulp.series("image")).on("change", reload);
   gulp.watch("*.html", gulp.series("html")).on("change", reload);
 });
