@@ -21,8 +21,8 @@
     @content;
   }
 }
-@mixin response-max($a) {
-  @media (max-width: $a) {
+@mixin response-xl {
+  @media (min-width: 1200px) {
     @content;
   }
 }

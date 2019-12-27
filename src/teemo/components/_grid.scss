@@ -53,4 +53,14 @@
       }
     }
   }
+  @include response-xl {
+    html {
+      font-size: 1rem;
+    }
+    @for $i from 1 through 12 {
+      .col-xl-#{$i} {
+        width: 100%/ (12 / $i) !important;
+      }
+    }
+  }
 }
