@@ -179,7 +179,7 @@ main .info {
 main .info span.arrow-down {
 	position: absolute;
 	z-index: 11;
-	bottom: 20px;
+	bottom: 50px;
 	left: 50%;
 	cursor: pointer;
 	-webkit-transform: translateX(-50%);
@@ -187,7 +187,7 @@ main .info span.arrow-down {
 }
 
 main .info span.arrow-down i {
-	font-size: 3rem;
+	font-size: 2rem;
 	color: white;
 }
 
@@ -237,20 +237,20 @@ main .info .slide img {
 	animation: zoomIn 50s forwards;
 }
 
-main .intro {
+main .about {
 	line-height: 32px;
 }
 
-main .intro h2 {
+main .about h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 }
 
-main .intro .detail-info {
+main .about .detail-info {
 	margin-top: 2rem;
 }
 
-main .intro .detail-info .item {
+main .about .detail-info .item {
 	display: -webkit-box;
 	display: flex;
 	padding: 8px 12px;
@@ -259,7 +259,7 @@ main .intro .detail-info .item {
 	align-items: center;
 }
 
-main .intro .detail-info .item label {
+main .about .detail-info .item label {
 	font-weight: bold;
 	display: -webkit-box;
 	display: flex;
@@ -267,7 +267,7 @@ main .intro .detail-info .item label {
 	align-items: center;
 }
 
-main .intro .detail-info .item label:after {
+main .about .detail-info .item label:after {
 	display: block;
 	width: 10px;
 	height: 1px;
@@ -276,11 +276,11 @@ main .intro .detail-info .item label:after {
 	background: rgba(95, 99, 104, .4);
 }
 
-main .intro .detail-info .item label span {
+main .about .detail-info .item label span {
 	font-weight: normal;
 }
 
-main .intro .download-cv {
+main .about .download-cv {
 	margin-top: 30px;
 }
 
@@ -303,8 +303,8 @@ main .intro .download-cv {
 }
 
 .upDown {
-	-webkit-animation: upDown .8s .4s infinite;
-	animation: upDown .8s .4s infinite;
+	-webkit-animation: upDown 1.3s 1s infinite;
+	animation: upDown 1.3s 1s infinite;
 	animation-direction: alternate-reverse;
 }
 
@@ -327,7 +327,7 @@ main {
 	margin-left: 0;
 }
 
-main .intro {
+main .about {
 	padding: 1rem;
 }
 
@@ -339,7 +339,7 @@ header {
 	display: block;
 }
 
-main .intro {
+main .about {
 	padding: 2rem;
 }
 
@@ -359,7 +359,7 @@ main {
 	margin-left: 350px;
 }
 
-main .intro {
+main .about {
 	padding: 3rem;
 }
 
@@ -375,7 +375,7 @@ aside {
 	display: none;
 }
 
-main .intro {
+main .about {
 	padding: .4rem;
 }
 
@@ -412,11 +412,11 @@ to {
 @-webkit-keyframes upDown {
 
 0% {
-	-webkit-transform: translateX(-50%) translateY(-30px);
-	transform: translateX(-50%) translateY(-30px);
+	-webkit-transform: translateX(-50%) translateY(-20px);
+	transform: translateX(-50%) translateY(-20px);
 }
 
-80% {
+50% {
 	-webkit-transform: translateX(-50%) translateY(20px);
 	transform: translateX(-50%) translateY(20px);
 }
@@ -431,11 +431,11 @@ to {
 @keyframes upDown {
 
 0% {
-	-webkit-transform: translateX(-50%) translateY(-30px);
-	transform: translateX(-50%) translateY(-30px);
+	-webkit-transform: translateX(-50%) translateY(-20px);
+	transform: translateX(-50%) translateY(-20px);
 }
 
-80% {
+50% {
 	-webkit-transform: translateX(-50%) translateY(20px);
 	transform: translateX(-50%) translateY(20px);
 }

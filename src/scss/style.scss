@@ -202,13 +202,13 @@ main {
     position: relative;
     span.arrow-down {
       position: absolute;
-      bottom: 20px;
+      bottom: 50px;
       cursor: pointer;
       left: 50%;
       transform: translateX(-50%);
       z-index: 11;
       i {
-        font-size: 3rem;
+        font-size: 2rem;
         color: white;
       }
     }
@@ -256,7 +256,7 @@ main {
       }
     }
   }
-  .intro {
+  .about {
     line-height: 32px;
     @include response {
       padding: 0.4rem;
@@ -322,7 +322,7 @@ main {
 }
 
 .upDown {
-  animation: upDown 0.8s 0.4s infinite;
+  animation: upDown 1.3s 1s infinite;
   animation-direction: alternate-reverse;
 }
 
@@ -342,10 +342,10 @@ main {
 
 @keyframes upDown {
   0% {
-    transform: translateX(-50%) translateY(-30px);
+    transform: translateX(-50%) translateY(-20px);
   }
 
-  80% {
+  50% {
     transform: translateX(-50%) translateY(20px);
   }
   100% {
